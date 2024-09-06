@@ -1,0 +1,35 @@
+ссылка на API - https://reqres.in/
+
+Кейс 1:
+Протестировать регистрацию пользователя в системе, необходимо создание 2 тестов:
+успешная регистрация с валидными данными
+регистрация с ошибкой из-за отсутствия пароля и проверить,что статус-код
+в ответе 400
+
+Кейс 2:
+1.Получить список пользователей страницы
+2.Убедиться, что email пользователей имеет окончание @reqres.in
+
+Кейс 3:
+Удалить второго пользователя и проверить что статус-код 204
+
+Кейс 4:
+Обновить информацию о пользователе методом patch и сравнить дату обновления с текущей датой в системе
+
+В реализации необходимо использовать request/response specifications
+
+
+"page":1,
+"per_page":3,
+"total":12,
+"total_pages":4,
+"data":
+    [
+     {"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},
+     {"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},
+     {"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"}
+     ],
+"support":{
+    "url":"https://reqres.in/#support-heading",
+    "text":"To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
